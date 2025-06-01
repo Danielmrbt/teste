@@ -1,28 +1,172 @@
-/* ===== RESPONSIVIDADE PARA TELAS PEQUENAS ===== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+.topbar {
+  background: #8a0eff;
+  color: white;
+  padding: 9px;
+  text-align: center;
+}
+
+.menu-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #fff;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.busca {
+  display: flex;
+  flex: 1;
+  max-width: 400px;
+  margin: 10px;
+}
+
+.busca input {
+  padding: 5px;
+  font-size: 16px;
+  flex: 1;
+}
+
+.busca button {
+  padding: 5px 10px;
+  font-size: 16px;
+  background: #8a0eff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.icones {
+  display: flex;
+  gap: 10px;
+}
+
+.icones a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.menu-principal {
+  background: #333;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.menu-principal a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.banners img,
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.produto {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  width: calc(33.333% - 20px);
+  max-width: 300px;
+  text-align: center;
+  padding: 15px;
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.produto h3 {
+  margin: 10px 0 5px;
+}
+
+.produto p {
+  color: #d62598;
+  font-weight: bold;
+}
+
+.produto a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #25d366;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.produto a:hover {
+  background: #1da851;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+  color: white;
+  font-size: 14px;
+}
+
+/* RESPONSIVO: AJUSTES PARA CELULAR */
 @media (max-width: 768px) {
   .menu-topo {
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    gap: 15px;
   }
 
   .busca {
     width: 100%;
+    margin: 0;
   }
 
   .busca input {
-    width: 70%;
+    width: 100%;
   }
 
   .icones {
     width: 100%;
-    display: flex;
     justify-content: flex-end;
   }
 
   .menu-principal {
     flex-direction: column;
-    text-align: center;
+    align-items: center;
     gap: 10px;
   }
 
@@ -33,6 +177,6 @@
 
   .produto {
     width: 100%;
-    max-width: 320px;
+    max-width: 340px;
   }
 }
