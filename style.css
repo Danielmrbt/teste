@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+.topbar {
+  background: #8a0eff;
+  color: white;
+  padding: 9px;
+  text-align: center;
+}
+
+.menu-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #fff;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.busca input {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.busca button {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.icones a {
+  margin-left: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.menu-principal {
+  background: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+.menu-principal a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.produto {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  width: calc(33.333% - 20px);
+  text-align: center;
+  padding: 15px;
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.produto a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px;
+  background: #25d366;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+  color: white;
+}
